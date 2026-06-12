@@ -745,6 +745,8 @@ section {
   opacity: 0;
   transform: translateY(10px);
   transition: var(--transition);
+  z-index: 10;
+  display: block;
 }
 
 .destination-card:hover .destination-explore-btn {
