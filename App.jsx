@@ -163,6 +163,11 @@ const Destinations = () => {
 
 const DestinationCard = ({ data, index }) => {
   const ref = useScrollAnimation();
+  const handleExplore = () => {
+    window.dispatchEvent(new CustomEvent('openBookingModal', { 
+      detail: { title: data.name, context: `${data.country} · ${data.price}` } 
+    }));
+  };
   return (
     <div className="destination-card fade-in-section" ref={ref} style={{ animationDelay: `${index * 0.08}s` }}>
       <img src={data.image} alt={`${data.name}, ${data.country}`} className="destination-card-img" loading="lazy" />
@@ -172,7 +177,7 @@ const DestinationCard = ({ data, index }) => {
         <p>{data.desc}</p>
         <span className="destination-price">{data.price}</span>
       </div>
-      <button className="destination-explore-btn">Explore →</button>
+      <button className="destination-explore-btn" onClick={handleExplore}>Explore →</button>
     </div>
   );
 };
@@ -210,6 +215,11 @@ const Stays = () => {
 
 const StayCard = ({ data, index }) => {
   const ref = useScrollAnimation();
+  const handleCheckAvail = () => {
+    window.dispatchEvent(new CustomEvent('openBookingModal', { 
+      detail: { title: data.name, context: `${data.city} · ${data.price}` } 
+    }));
+  };
   return (
     <div className="stay-card fade-in-section" ref={ref} style={{ animationDelay: `${index * 0.1}s` }}>
       <div className="stay-card-banner">
@@ -225,7 +235,7 @@ const StayCard = ({ data, index }) => {
         </div>
         <div className="stay-card-footer">
           <span className="stay-rating">{'★'.repeat(Math.floor(data.rating))} {data.rating}</span>
-          <button className="btn-check-avail">Check Availability →</button>
+          <button className="btn-check-avail" onClick={handleCheckAvail}>Check Availability →</button>
         </div>
       </div>
     </div>
@@ -275,6 +285,11 @@ const Packages = () => {
 
 const PackageCard = ({ data, index }) => {
   const ref = useScrollAnimation();
+  const handleViewPackage = () => {
+    window.dispatchEvent(new CustomEvent('openBookingModal', { 
+      detail: { title: data.name, context: `Package · ${data.price} / person` } 
+    }));
+  };
   return (
     <div className="package-card fade-in-section" ref={ref} style={{ animationDelay: `${index * 0.1}s` }}>
       <div className="package-card-banner">
@@ -291,7 +306,7 @@ const PackageCard = ({ data, index }) => {
         </div>
         <div className="package-card-footer">
           <span className="package-rating">{'★'.repeat(Math.floor(data.rating))} {data.rating}</span>
-          <button className="btn-view-package">View Package</button>
+          <button className="btn-view-package" onClick={handleViewPackage}>View Package</button>
         </div>
       </div>
     </div>
@@ -378,6 +393,11 @@ const HiddenGems = () => {
 
 const GemCard = ({ data, index }) => {
   const ref = useScrollAnimation();
+  const handleExploreGem = () => {
+    window.dispatchEvent(new CustomEvent('openBookingModal', { 
+      detail: { title: data.name, context: `Hidden Gem · ${data.country}` } 
+    }));
+  };
   return (
     <div className="gem-card fade-in-section" ref={ref} style={{ animationDelay: `${index * 0.1}s` }}>
       <img src={data.image} alt={`${data.name}, ${data.country}`} className="gem-card-img" loading="lazy" />
@@ -388,7 +408,7 @@ const GemCard = ({ data, index }) => {
         <p className="gem-location">{data.country} · {data.continent}</p>
         <p className="gem-timing">Best time: {data.bestTime}</p>
         <p>{data.desc}</p>
-        <button className="gem-explore-btn">Explore This Gem →</button>
+        <button className="gem-explore-btn" onClick={handleExploreGem}>Explore This Gem →</button>
       </div>
     </div>
   );
@@ -694,6 +714,99 @@ const useGlobalScrollObserver = () => {
   }, []);
 };
 
+/* ─── BOOKING MODAL ─── */
+const BookingModal = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [bookingData, setBookingData] = useState(null);
+  const [submitted, setSubmitted] = useState(false);
+
+  useEffect(() => {
+    const handleOpen = (e) => {
+      setBookingData(e.detail);
+      setIsOpen(true);
+      setSubmitted(false);
+      document.body.style.overflow = 'hidden';
+    };
+    window.addEventListener('openBookingModal', handleOpen);
+    return () => window.removeEventListener('openBookingModal', handleOpen);
+  }, []);
+
+  const close = () => {
+    setIsOpen(false);
+    document.body.style.overflow = 'auto';
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSubmitted(true);
+    setTimeout(() => {
+      close();
+    }, 2500);
+  };
+
+  if (!isOpen) return null;
+
+  return (
+    <div className={`modal-overlay ${isOpen ? 'show' : ''}`} onClick={close}>
+      <div className="modal-content" onClick={e => e.stopPropagation()}>
+        <button className="modal-close" onClick={close}>✕</button>
+        
+        {submitted ? (
+          <div className="modal-success">
+            <div className="success-icon">✓</div>
+            <h3>Request Sent!</h3>
+            <p>Our travel concierge will contact you within 24 hours regarding your trip to {bookingData?.title}.</p>
+          </div>
+        ) : (
+          <>
+            <div className="modal-header">
+              <span className="modal-eyebrow">Plan Your Next Escape</span>
+              <h2>{bookingData?.title}</h2>
+              {bookingData?.context && <p className="modal-context">{bookingData.context}</p>}
+            </div>
+            <form className="modal-form" onSubmit={handleSubmit}>
+              <div className="form-row">
+                <div className="form-group">
+                  <label>First Name</label>
+                  <input type="text" required placeholder="Jane" />
+                </div>
+                <div className="form-group">
+                  <label>Last Name</label>
+                  <input type="text" required placeholder="Doe" />
+                </div>
+              </div>
+              <div className="form-group">
+                <label>Email Address</label>
+                <input type="email" required placeholder="jane@example.com" />
+              </div>
+              <div className="form-row">
+                <div className="form-group">
+                  <label>Travel Dates</label>
+                  <input type="text" placeholder="e.g., Oct 12 - Oct 20" />
+                </div>
+                <div className="form-group">
+                  <label>Guests</label>
+                  <select>
+                    <option>1 Traveler</option>
+                    <option>2 Travelers</option>
+                    <option>3 - 4 Travelers</option>
+                    <option>5+ Travelers</option>
+                  </select>
+                </div>
+              </div>
+              <div className="form-group">
+                <label>Special Requests</label>
+                <textarea rows="3" placeholder="Tell us about your dream trip..."></textarea>
+              </div>
+              <button type="submit" className="btn-modal-submit">Request Itinerary →</button>
+            </form>
+          </>
+        )}
+      </div>
+    </div>
+  );
+};
+
 /* ─── APP ─── */
 const App = () => {
   useGlobalScrollObserver();
@@ -712,6 +825,7 @@ const App = () => {
       <Blog />
       <Newsletter />
       <Footer />
+      <BookingModal />
     </>
   );
 };
