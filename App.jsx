@@ -395,66 +395,6 @@ const GemCard = ({ data, index }) => {
   );
 };
 
-/* ─── SECTION 8: WHY CHOOSE US / STATS ─── */
-const CountUpNumber = ({ end, suffix = '' }) => {
-  const [count, setCount] = useState(0);
-  const ref = useRef(null);
-  const hasAnimated = useRef(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting && !hasAnimated.current) {
-          hasAnimated.current = true;
-          let start = 0;
-          const duration = 2000;
-          const startTime = performance.now();
-          const animate = (currentTime) => {
-            const elapsed = currentTime - startTime;
-            const progress = Math.min(elapsed / duration, 1);
-            const eased = 1 - Math.pow(1 - progress, 3);
-            setCount(Math.floor(eased * end));
-            if (progress < 1) requestAnimationFrame(animate);
-          };
-          requestAnimationFrame(animate);
-        }
-      },
-      { threshold: 0.5 }
-    );
-    if (ref.current) observer.observe(ref.current);
-    return () => { if (ref.current) observer.unobserve(ref.current); };
-  }, [end]);
-
-  return <span ref={ref}>{count.toLocaleString()}{suffix}</span>;
-};
-
-const Stats = () => (
-  <section className="stats-section" id="stats">
-    <div className="stats-grid">
-      <div className="stat-block">
-        <div className="stat-icon">🌍</div>
-        <div className="stat-number"><CountUpNumber end={150} suffix="+" /></div>
-        <div className="stat-label">Destinations</div>
-      </div>
-      <div className="stat-block">
-        <div className="stat-icon">🏆</div>
-        <div className="stat-number"><CountUpNumber end={15} /></div>
-        <div className="stat-label">Years Experience</div>
-      </div>
-      <div className="stat-block">
-        <div className="stat-icon">👥</div>
-        <div className="stat-number"><CountUpNumber end={50000} suffix="+" /></div>
-        <div className="stat-label">Happy Travelers</div>
-      </div>
-      <div className="stat-block">
-        <div className="stat-icon">🍽</div>
-        <div className="stat-number"><CountUpNumber end={300} suffix="+" /></div>
-        <div className="stat-label">Food Experiences</div>
-      </div>
-    </div>
-  </section>
-);
-
 /* ─── SECTION 9: HOW IT WORKS ─── */
 const HowItWorks = () => {
   const ref = useScrollAnimation();
@@ -645,7 +585,6 @@ const App = () => {
       <Packages />
       <Culinary />
       <HiddenGems />
-      <Stats />
       <HowItWorks />
       <Blog />
       <Newsletter />
