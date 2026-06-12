@@ -1296,7 +1296,9 @@ section {
 }
 
 .gem-explore-btn {
-  margin-top: 12px;
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
   padding: 8px 20px;
   background: transparent;
   border: 1.5px solid var(--gold);

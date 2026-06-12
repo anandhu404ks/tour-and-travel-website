@@ -342,7 +342,7 @@ const CulinaryCard = ({ data, index }) => {
           <span className={`culinary-tag ${data.tagClass}`}>{data.category}</span>
           {data.foodTour && <span className="tag-food-tour">🍴 Food Tour Available</span>}
         </div>
-        <a href={data.guideUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', marginTop: '16px', color: 'var(--midnight)', fontWeight: 600, textDecoration: 'underline' }}>More →</a>
+        <a href={data.guideUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'block', width: 'fit-content', marginLeft: 'auto', marginTop: '16px', color: 'var(--midnight)', fontWeight: 600, textDecoration: 'underline' }}>More →</a>
       </div>
     </div>
   );
