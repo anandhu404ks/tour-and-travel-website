@@ -429,9 +429,9 @@ const HowItWorks = () => {
 
 /* ─── SECTION 11: TRAVEL BLOG ─── */
 const blogData = [
-  { title: 'Hidden Gems of the Balkans: Why Kotor Should Be Your Next Stop', excerpt: 'Forget Dubrovnik\'s cruise ship crowds. Just across the border lies Kotor — a medieval walled city nestled between dramatic Adriatic fjords and ancient Venetian fortresses.', category: 'Hidden Gems', categoryColor: '#2D5A3D', author: 'Elena Vasquez', date: 'May 15, 2025', image: 'https://images.unsplash.com/photo-1555990793-da11153b2473?w=700&h=400&fit=crop&q=80' },
-  { title: 'Eating Your Way Through Bangkok: A Street Food Survival Guide', excerpt: 'From midnight Pad Thai at Thip Samai to Yaowarat Road\'s legendary crab omelets — here\'s how to navigate Bangkok\'s overwhelming (and delicious) street food maze.', category: 'Culinary', categoryColor: '#E8614A', author: 'Arun Patel', date: 'April 28, 2025', image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&h=400&fit=crop&q=80' },
-  { title: 'How to Sleep in Europe for Under $20 a Night', excerpt: 'Generator Barcelona, The Yard Prague, Safestay Edinburgh — our insider guide to Europe\'s best design hostels that cost less than a fancy dinner back home.', category: 'Affordable Stays', categoryColor: '#D4A853', author: 'Marco Bianchi', date: 'April 10, 2025', image: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=700&h=400&fit=crop&q=80' },
+  { title: 'Hidden Gems of the Balkans: Why Kotor Should Be Your Next Stop', excerpt: 'Forget Dubrovnik\'s cruise ship crowds. Just across the border lies Kotor — a medieval walled city nestled between dramatic Adriatic fjords and ancient Venetian fortresses.', category: 'Hidden Gems', categoryColor: '#2D5A3D', author: 'Elena Vasquez', date: 'May 15, 2025', image: 'https://images.unsplash.com/photo-1555990793-da11153b2473?w=700&h=400&fit=crop&q=80', guideUrl: 'https://www.arzotravels.com/things-to-do-in-kotor/' },
+  { title: 'Eating Your Way Through Bangkok: A Street Food Survival Guide', excerpt: 'From midnight Pad Thai at Thip Samai to Yaowarat Road\'s legendary crab omelets — here\'s how to navigate Bangkok\'s overwhelming (and delicious) street food maze.', category: 'Culinary', categoryColor: '#E8614A', author: 'Arun Patel', date: 'April 28, 2025', image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&h=400&fit=crop&q=80', guideUrl: 'https://migrationology.com/bangkok-street-food-guide/' },
+  { title: 'How to Sleep in Europe for Under $20 a Night', excerpt: 'Generator Barcelona, The Yard Prague, Safestay Edinburgh — our insider guide to Europe\'s best design hostels that cost less than a fancy dinner back home.', category: 'Affordable Stays', categoryColor: '#D4A853', author: 'Marco Bianchi', date: 'April 10, 2025', image: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=700&h=400&fit=crop&q=80', guideUrl: 'https://www.hostelworld.com/blog/best-cheap-hostels-in-europe/' },
 ];
 
 const Blog = () => {
@@ -464,7 +464,7 @@ const BlogCard = ({ data, index }) => {
         <p>{data.excerpt}</p>
         <div className="blog-meta">
           <span>{data.author} · {data.date}</span>
-          <a href="#" className="blog-read-more">Read More →</a>
+          <a href={data.guideUrl} target="_blank" rel="noopener noreferrer" className="blog-read-more">Read More →</a>
         </div>
       </div>
     </div>
