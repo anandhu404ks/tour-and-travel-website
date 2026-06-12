@@ -130,16 +130,16 @@ const Hero = () => {
 
 /* ─── SECTION 3: MUST-VISIT DESTINATIONS ─── */
 const destinationsData = [
-  { name: 'Santorini', country: 'Greece', flag: '🇬🇷', desc: 'Caldera views, blue-domed churches, and legendary Oia sunsets', price: 'From $1,299', image: 'https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=600&h=800&fit=crop&q=80' },
-  { name: 'Kyoto', country: 'Japan', flag: '🇯🇵', desc: 'Bamboo groves, geisha districts, and 1,600 ancient temples', price: 'From $1,499', image: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&h=800&fit=crop&q=80' },
-  { name: 'Bali', country: 'Indonesia', flag: '🇮🇩', desc: 'Emerald rice terraces, spiritual temples, and world-class surf', price: 'From $899', image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&h=800&fit=crop&q=80' },
-  { name: 'Maldives', country: 'Maldives', flag: '🇲🇻', desc: 'Overwater bungalows and bioluminescent beaches', price: 'From $1,899', image: 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=600&h=800&fit=crop&q=80' },
-  { name: 'Machu Picchu', country: 'Peru', flag: '🇵🇪', desc: 'Incan citadel perched high in the Andes mountains', price: 'From $1,199', image: 'https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=600&h=800&fit=crop&q=80' },
-  { name: 'Amalfi Coast', country: 'Italy', flag: '🇮🇹', desc: 'Cliffside villages, limoncello, and azure coastal drives', price: 'From $1,599', image: 'https://images.unsplash.com/photo-1534113414509-0eec2bfb493f?w=600&h=800&fit=crop&q=80' },
-  { name: 'Patagonia', country: 'Chile & Argentina', flag: '🇨🇱', desc: 'Torres del Paine, glaciers, and world-class trekking', price: 'From $2,199', image: 'https://images.unsplash.com/photo-1531761535209-180857e963b9?w=600&h=800&fit=crop&q=80' },
-  { name: 'Marrakech', country: 'Morocco', flag: '🇲🇦', desc: 'Vibrant souks, ornate riads, and Jemaa el-Fna square', price: 'From $799', image: 'https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?w=600&h=800&fit=crop&q=80' },
-  { name: 'Queenstown', country: 'New Zealand', flag: '🇳🇿', desc: 'Adventure capital — fjords, bungee jumping, and alpine lakes', price: 'From $1,799', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=800&fit=crop&q=80' },
-  { name: 'Rajasthan', country: 'India', flag: '🇮🇳', desc: 'Grand forts, opulent palaces, desert safaris, and vivid colors', price: 'From ₹35,000', image: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=600&h=800&fit=crop&q=80' },
+  { name: 'Santorini', country: 'Greece', flag: '🇬🇷', desc: 'Caldera views, blue-domed churches, and legendary Oia sunsets', price: 'From $1,299', image: 'https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=600&h=800&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/greece/cyclades/santorini' },
+  { name: 'Kyoto', country: 'Japan', flag: '🇯🇵', desc: 'Bamboo groves, geisha districts, and 1,600 ancient temples', price: 'From $1,499', image: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&h=800&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/japan/kansai/kyoto' },
+  { name: 'Bali', country: 'Indonesia', flag: '🇮🇩', desc: 'Emerald rice terraces, spiritual temples, and world-class surf', price: 'From $899', image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&h=800&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/indonesia/bali' },
+  { name: 'Maldives', country: 'Maldives', flag: '🇲🇻', desc: 'Overwater bungalows and bioluminescent beaches', price: 'From $1,899', image: 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=600&h=800&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/maldives' },
+  { name: 'Machu Picchu', country: 'Peru', flag: '🇵🇪', desc: 'Incan citadel perched high in the Andes mountains', price: 'From $1,199', image: 'https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=600&h=800&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/peru/the-cuzco-area/machu-picchu' },
+  { name: 'Amalfi Coast', country: 'Italy', flag: '🇮🇹', desc: 'Cliffside villages, limoncello, and azure coastal drives', price: 'From $1,599', image: 'https://images.unsplash.com/photo-1534113414509-0eec2bfb493f?w=600&h=800&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/italy/campania/the-amalfi-coast' },
+  { name: 'Patagonia', country: 'Chile & Argentina', flag: '🇨🇱', desc: 'Torres del Paine, glaciers, and world-class trekking', price: 'From $2,199', image: 'https://images.unsplash.com/photo-1531761535209-180857e963b9?w=600&h=800&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/chile/patagonia' },
+  { name: 'Marrakech', country: 'Morocco', flag: '🇲🇦', desc: 'Vibrant souks, ornate riads, and Jemaa el-Fna square', price: 'From $799', image: 'https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?w=600&h=800&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/morocco/marrakesh' },
+  { name: 'Queenstown', country: 'New Zealand', flag: '🇳🇿', desc: 'Adventure capital — fjords, bungee jumping, and alpine lakes', price: 'From $1,799', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=800&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/new-zealand/queenstown-and-wanaka' },
+  { name: 'Rajasthan', country: 'India', flag: '🇮🇳', desc: 'Grand forts, opulent palaces, desert safaris, and vivid colors', price: 'From ₹35,000', image: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=600&h=800&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/india/rajasthan' },
 ];
 
 const Destinations = () => {
@@ -163,11 +163,6 @@ const Destinations = () => {
 
 const DestinationCard = ({ data, index }) => {
   const ref = useScrollAnimation();
-  const handleExplore = () => {
-    window.dispatchEvent(new CustomEvent('openBookingModal', { 
-      detail: { title: data.name, context: `${data.country} · ${data.price}` } 
-    }));
-  };
   return (
     <div className="destination-card fade-in-section" ref={ref} style={{ animationDelay: `${index * 0.08}s` }}>
       <img src={data.image} alt={`${data.name}, ${data.country}`} className="destination-card-img" loading="lazy" />
@@ -177,19 +172,19 @@ const DestinationCard = ({ data, index }) => {
         <p>{data.desc}</p>
         <span className="destination-price">{data.price}</span>
       </div>
-      <button className="destination-explore-btn" onClick={handleExplore}>Explore →</button>
+      <a href={data.guideUrl} target="_blank" rel="noopener noreferrer" className="destination-explore-btn">Read Guide →</a>
     </div>
   );
 };
 
 /* ─── SECTION 4: AFFORDABLE STAYS ─── */
 const staysData = [
-  { name: 'The Yard Hostel', city: 'Prague, Czech Republic', price: 'From $12/night', desc: "Central Europe's hippest social hostel with a craft beer garden", amenities: ['WiFi', 'Bar', 'Social Events', 'Lockers'], rating: 4.7, image: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=600&h=400&fit=crop&q=80' },
-  { name: 'Zostel Jaipur', city: 'Jaipur, India', price: 'From ₹499/night', desc: 'Rooftop views of Amber Fort and the Pink City skyline', amenities: ['WiFi', 'Breakfast', 'Rooftop', 'Lockers'], rating: 4.5, image: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=600&h=400&fit=crop&q=80' },
-  { name: 'Generator Hostel', city: 'Barcelona, Spain', price: 'From €18/night', desc: 'Stylish design hostel steps from the buzzing Las Ramblas strip', amenities: ['WiFi', 'Bar', 'Terrace', 'Café'], rating: 4.6, image: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600&h=400&fit=crop&q=80' },
-  { name: 'Selina Medellín', city: 'Medellín, Colombia', price: 'From $20/night', desc: 'Co-living meets travel in the City of Eternal Spring', amenities: ['WiFi', 'Co-work', 'Pool', 'Yoga'], rating: 4.8, image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&h=400&fit=crop&q=80' },
-  { name: 'Lub d Bangkok Silom', city: 'Bangkok, Thailand', price: 'From $15/night', desc: 'Capsule-style luxury in the vibrant heart of Bangkok', amenities: ['WiFi', 'Café', 'Lockers', 'Theater'], rating: 4.6, image: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&h=400&fit=crop&q=80' },
-  { name: 'Safestay Edinburgh', city: 'Edinburgh, Scotland', price: 'From £22/night', desc: 'Historic hostel inside a 16th-century Royal Mile townhouse', amenities: ['WiFi', 'Breakfast', 'Bar', 'Tours'], rating: 4.5, image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop&q=80' },
+  { name: 'The Yard Hostel', city: 'Prague, Czech Republic', price: 'From $12/night', desc: "Central Europe's hippest social hostel with a craft beer garden", amenities: ['WiFi', 'Bar', 'Social Events', 'Lockers'], rating: 4.7, image: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=600&h=400&fit=crop&q=80', guideUrl: 'https://www.hostelworld.com/st/hostels/p/284992/the-yard-hostel/' },
+  { name: 'Zostel Jaipur', city: 'Jaipur, India', price: 'From ₹499/night', desc: 'Rooftop views of Amber Fort and the Pink City skyline', amenities: ['WiFi', 'Breakfast', 'Rooftop', 'Lockers'], rating: 4.5, image: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=600&h=400&fit=crop&q=80', guideUrl: 'https://www.zostel.com/zostel/jaipur/' },
+  { name: 'Generator Hostel', city: 'Barcelona, Spain', price: 'From €18/night', desc: 'Stylish design hostel steps from the buzzing Las Ramblas strip', amenities: ['WiFi', 'Bar', 'Terrace', 'Café'], rating: 4.6, image: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600&h=400&fit=crop&q=80', guideUrl: 'https://staygenerator.com/hostels/barcelona' },
+  { name: 'Selina Medellín', city: 'Medellín, Colombia', price: 'From $20/night', desc: 'Co-living meets travel in the City of Eternal Spring', amenities: ['WiFi', 'Co-work', 'Pool', 'Yoga'], rating: 4.8, image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&h=400&fit=crop&q=80', guideUrl: 'https://www.selina.com/colombia/medellin/' },
+  { name: 'Lub d Bangkok Silom', city: 'Bangkok, Thailand', price: 'From $15/night', desc: 'Capsule-style luxury in the vibrant heart of Bangkok', amenities: ['WiFi', 'Café', 'Lockers', 'Theater'], rating: 4.6, image: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&h=400&fit=crop&q=80', guideUrl: 'https://lubd.com/destination/bangkok-silom/' },
+  { name: 'Safestay Edinburgh', city: 'Edinburgh, Scotland', price: 'From £22/night', desc: 'Historic hostel inside a 16th-century Royal Mile townhouse', amenities: ['WiFi', 'Breakfast', 'Bar', 'Tours'], rating: 4.5, image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop&q=80', guideUrl: 'https://www.safestay.com/edinburgh-royal-mile/' },
 ];
 
 const Stays = () => {
@@ -215,11 +210,6 @@ const Stays = () => {
 
 const StayCard = ({ data, index }) => {
   const ref = useScrollAnimation();
-  const handleCheckAvail = () => {
-    window.dispatchEvent(new CustomEvent('openBookingModal', { 
-      detail: { title: data.name, context: `${data.city} · ${data.price}` } 
-    }));
-  };
   return (
     <div className="stay-card fade-in-section" ref={ref} style={{ animationDelay: `${index * 0.1}s` }}>
       <div className="stay-card-banner">
@@ -235,7 +225,7 @@ const StayCard = ({ data, index }) => {
         </div>
         <div className="stay-card-footer">
           <span className="stay-rating">{'★'.repeat(Math.floor(data.rating))} {data.rating}</span>
-          <button className="btn-check-avail" onClick={handleCheckAvail}>Check Availability →</button>
+          <a href={data.guideUrl} target="_blank" rel="noopener noreferrer" className="btn-check-avail">View Hostel →</a>
         </div>
       </div>
     </div>
@@ -244,12 +234,12 @@ const StayCard = ({ data, index }) => {
 
 /* ─── SECTION 5: BEST PACKAGES ─── */
 const packagesData = [
-  { name: 'Bali Bliss — 7 Days', category: 'Luxury', itinerary: 'Rice terrace trek → Ubud temples → Seminyak beach → Tanah Lot sunset', price: '$1,299', includes: ['✈ Flights', '🏨 5★ Resort', '🍽 All Meals', '🚌 Transfers'], badge: 'Most Popular', badgeClass: 'badge-popular', rating: 4.9, image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=700&h=400&fit=crop&q=80' },
-  { name: 'Swiss Alps — 10 Days', category: 'Adventure', itinerary: 'Zurich → Interlaken → Jungfrau → Zermatt → Lake Geneva → Lucerne', price: '$3,499', includes: ['✈ Flights', '🏨 4★ Chalet', '🍽 Breakfast', '🚌 Rail Pass'], badge: 'Best Value', badgeClass: 'badge-value', rating: 4.8, image: 'https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=700&h=400&fit=crop&q=80' },
-  { name: 'Golden Triangle India — 8 Days', category: 'Cultural', itinerary: 'Delhi → Agra (Taj Mahal) → Jaipur (Amber Fort) → Varanasi', price: '₹45,000', includes: ['🏨 Heritage Hotels', '🍽 All Meals', '🚌 AC Transport', '🎫 Guides'], badge: null, badgeClass: '', rating: 4.7, image: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=700&h=400&fit=crop&q=80' },
-  { name: 'Iceland Northern Lights — 6 Days', category: 'Adventure', itinerary: 'Reykjavik → Golden Circle → Blue Lagoon → Glacier Hike → Northern Lights hunt', price: '$2,899', includes: ['✈ Flights', '🏨 Boutique Hotel', '🍽 Breakfast', '🚌 4x4 Tours'], badge: null, badgeClass: '', rating: 4.9, image: 'https://images.unsplash.com/photo-1520769669658-f07657f5a307?w=700&h=400&fit=crop&q=80' },
-  { name: 'Santorini & Mykonos — 8 Days', category: 'Honeymoon', itinerary: 'Athens → Santorini (Oia sunset) → Mykonos (beach clubs) → Delos ruins', price: '$2,599', includes: ['✈ Flights', '🏨 Cave Hotel', '🍽 Half Board', '🚌 Ferry'], badge: 'Honeymoon Pick', badgeClass: 'badge-honeymoon', rating: 4.8, image: 'https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=700&h=400&fit=crop&q=80' },
-  { name: 'Vietnam Explorer — 12 Days', category: 'Budget', itinerary: 'Hanoi → Ha Long Bay → Hue → Hoi An → Ho Chi Minh City → Mekong Delta', price: '$899', includes: ['🏨 Boutique Hotels', '🍽 Breakfast', '🚌 Internal Flights', '🎫 Guides'], badge: 'Best Value', badgeClass: 'badge-value', rating: 4.7, image: 'https://images.unsplash.com/photo-1528127269322-539801943592?w=700&h=400&fit=crop&q=80' },
+  { name: 'Bali Bliss — 7 Days', category: 'Luxury', itinerary: 'Rice terrace trek → Ubud temples → Seminyak beach → Tanah Lot sunset', price: '$1,299', includes: ['✈ Flights', '🏨 5★ Resort', '🍽 All Meals', '🚌 Transfers'], badge: 'Most Popular', badgeClass: 'badge-popular', rating: 4.9, image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=700&h=400&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/indonesia/bali' },
+  { name: 'Swiss Alps — 10 Days', category: 'Adventure', itinerary: 'Zurich → Interlaken → Jungfrau → Zermatt → Lake Geneva → Lucerne', price: '$3,499', includes: ['✈ Flights', '🏨 4★ Chalet', '🍽 Breakfast', '🚌 Rail Pass'], badge: 'Best Value', badgeClass: 'badge-value', rating: 4.8, image: 'https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=700&h=400&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/switzerland/the-swiss-alps' },
+  { name: 'Golden Triangle India — 8 Days', category: 'Cultural', itinerary: 'Delhi → Agra (Taj Mahal) → Jaipur (Amber Fort) → Varanasi', price: '₹45,000', includes: ['🏨 Heritage Hotels', '🍽 All Meals', '🚌 AC Transport', '🎫 Guides'], badge: null, badgeClass: '', rating: 4.7, image: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=700&h=400&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/articles/golden-triangle-india' },
+  { name: 'Iceland Northern Lights — 6 Days', category: 'Adventure', itinerary: 'Reykjavik → Golden Circle → Blue Lagoon → Glacier Hike → Northern Lights hunt', price: '$2,899', includes: ['✈ Flights', '🏨 Boutique Hotel', '🍽 Breakfast', '🚌 4x4 Tours'], badge: null, badgeClass: '', rating: 4.9, image: 'https://images.unsplash.com/photo-1520769669658-f07657f5a307?w=700&h=400&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/iceland' },
+  { name: 'Santorini & Mykonos — 8 Days', category: 'Honeymoon', itinerary: 'Athens → Santorini (Oia sunset) → Mykonos (beach clubs) → Delos ruins', price: '$2,599', includes: ['✈ Flights', '🏨 Cave Hotel', '🍽 Half Board', '🚌 Ferry'], badge: 'Honeymoon Pick', badgeClass: 'badge-honeymoon', rating: 4.8, image: 'https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=700&h=400&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/greece/cyclades' },
+  { name: 'Vietnam Explorer — 12 Days', category: 'Budget', itinerary: 'Hanoi → Ha Long Bay → Hue → Hoi An → Ho Chi Minh City → Mekong Delta', price: '$899', includes: ['🏨 Boutique Hotels', '🍽 Breakfast', '🚌 Internal Flights', '🎫 Guides'], badge: 'Best Value', badgeClass: 'badge-value', rating: 4.7, image: 'https://images.unsplash.com/photo-1528127269322-539801943592?w=700&h=400&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/vietnam' },
 ];
 
 const Packages = () => {
@@ -285,11 +275,6 @@ const Packages = () => {
 
 const PackageCard = ({ data, index }) => {
   const ref = useScrollAnimation();
-  const handleViewPackage = () => {
-    window.dispatchEvent(new CustomEvent('openBookingModal', { 
-      detail: { title: data.name, context: `Package · ${data.price} / person` } 
-    }));
-  };
   return (
     <div className="package-card fade-in-section" ref={ref} style={{ animationDelay: `${index * 0.1}s` }}>
       <div className="package-card-banner">
@@ -306,7 +291,7 @@ const PackageCard = ({ data, index }) => {
         </div>
         <div className="package-card-footer">
           <span className="package-rating">{'★'.repeat(Math.floor(data.rating))} {data.rating}</span>
-          <button className="btn-view-package" onClick={handleViewPackage}>View Package</button>
+          <a href={data.guideUrl} target="_blank" rel="noopener noreferrer" className="btn-view-package" style={{ textDecoration: 'none', textAlign: 'center' }}>View Package Guide</a>
         </div>
       </div>
     </div>
@@ -315,12 +300,12 @@ const PackageCard = ({ data, index }) => {
 
 /* ─── SECTION 6: CULINARY DELIGHTS ─── */
 const culinaryData = [
-  { dish: 'Street Pad Thai', city: 'Bangkok', country: 'Thailand', flag: '🇹🇭', desc: 'Wok-tossed rice noodles at Thip Samai, open since 1966 — a national treasure on a plate', category: 'Street Food', tagClass: 'tag-street-food', foodTour: true, image: 'https://images.unsplash.com/photo-1559314809-0d155014e29e?w=600&h=500&fit=crop&q=80' },
-  { dish: 'Neapolitan Pizza', city: 'Naples', country: 'Italy', flag: '🇮🇹', desc: 'Wood-fired Margherita at L\'Antica Pizzeria da Michele — the birthplace of pizza itself', category: 'Traditional', tagClass: 'tag-traditional', foodTour: true, image: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&h=500&fit=crop&q=80' },
-  { dish: 'Moroccan Tagine', city: 'Marrakech', country: 'Morocco', flag: '🇲🇦', desc: 'Slow-cooked lamb with preserved lemon and saffron in a hand-crafted clay pot', category: 'Traditional', tagClass: 'tag-traditional', foodTour: false, image: 'https://images.unsplash.com/photo-1541518763669-27fef04b14ea?w=600&h=500&fit=crop&q=80' },
-  { dish: 'Sushi Omakase', city: 'Tokyo', country: 'Japan', flag: '🇯🇵', desc: "Chef's seasonal selection at Tsukiji Outer Market — artistry at dawn", category: 'Fine Dining', tagClass: 'tag-fine-dining', foodTour: true, image: 'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=600&h=500&fit=crop&q=80' },
-  { dish: 'Arancini & Cannoli', city: 'Palermo, Sicily', country: 'Italy', flag: '🇮🇹', desc: "Crispy risotto balls and cream-filled pastries at Ballarò market — street food perfection", category: 'Market', tagClass: 'tag-market', foodTour: true, image: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&h=500&fit=crop&q=80' },
-  { dish: 'Masala Dosa', city: 'Chennai', country: 'India', flag: '🇮🇳', desc: 'Crispy fermented crepe stuffed with spiced potato, served with sambar at Murugan Idli Shop', category: 'Street Food', tagClass: 'tag-street-food', foodTour: false, image: 'https://images.unsplash.com/photo-1630383249896-424e482df921?w=600&h=500&fit=crop&q=80' },
+  { dish: 'Street Pad Thai', city: 'Bangkok', country: 'Thailand', flag: '🇹🇭', desc: 'Wok-tossed rice noodles at Thip Samai, open since 1966 — a national treasure on a plate', category: 'Street Food', tagClass: 'tag-street-food', foodTour: true, image: 'https://images.unsplash.com/photo-1559314809-0d155014e29e?w=600&h=500&fit=crop&q=80', guideUrl: 'https://guide.michelin.com/en/bangkok-region/bangkok/restaurant/thipsamai-maha-chai' },
+  { dish: 'Neapolitan Pizza', city: 'Naples', country: 'Italy', flag: '🇮🇹', desc: 'Wood-fired Margherita at L\'Antica Pizzeria da Michele — the birthplace of pizza itself', category: 'Traditional', tagClass: 'tag-traditional', foodTour: true, image: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&h=500&fit=crop&q=80', guideUrl: 'https://www.damichele.net/' },
+  { dish: 'Moroccan Tagine', city: 'Marrakech', country: 'Morocco', flag: '🇲🇦', desc: 'Slow-cooked lamb with preserved lemon and saffron in a hand-crafted clay pot', category: 'Traditional', tagClass: 'tag-traditional', foodTour: false, image: 'https://images.unsplash.com/photo-1541518763669-27fef04b14ea?w=600&h=500&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/morocco/marrakesh/in-location/eating/a/nar/2e50c4ce-a159-455a-bd50-48243162b467/355491' },
+  { dish: 'Sushi Omakase', city: 'Tokyo', country: 'Japan', flag: '🇯🇵', desc: "Chef's seasonal selection at Tsukiji Outer Market — artistry at dawn", category: 'Fine Dining', tagClass: 'tag-fine-dining', foodTour: true, image: 'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=600&h=500&fit=crop&q=80', guideUrl: 'https://guide.michelin.com/en/tokyo-region/tokyo/restaurants/sushi' },
+  { dish: 'Arancini & Cannoli', city: 'Palermo, Sicily', country: 'Italy', flag: '🇮🇹', desc: "Crispy risotto balls and cream-filled pastries at Ballarò market — street food perfection", category: 'Market', tagClass: 'tag-market', foodTour: true, image: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&h=500&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/articles/best-street-food-palermo' },
+  { dish: 'Masala Dosa', city: 'Chennai', country: 'India', flag: '🇮🇳', desc: 'Crispy fermented crepe stuffed with spiced potato, served with sambar at Murugan Idli Shop', category: 'Street Food', tagClass: 'tag-street-food', foodTour: false, image: 'https://images.unsplash.com/photo-1630383249896-424e482df921?w=600&h=500&fit=crop&q=80', guideUrl: 'https://muruganidlishop.com/' },
 ];
 
 const Culinary = () => {
@@ -357,6 +342,7 @@ const CulinaryCard = ({ data, index }) => {
           <span className={`culinary-tag ${data.tagClass}`}>{data.category}</span>
           {data.foodTour && <span className="tag-food-tour">🍴 Food Tour Available</span>}
         </div>
+        <a href={data.guideUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', marginTop: '16px', color: 'var(--midnight)', fontWeight: 600, textDecoration: 'underline' }}>Read Food Guide →</a>
       </div>
     </div>
   );
@@ -364,12 +350,12 @@ const CulinaryCard = ({ data, index }) => {
 
 /* ─── SECTION 7: HIDDEN GEMS ─── */
 const gemsData = [
-  { name: 'Kotor', country: 'Montenegro', continent: 'Europe', desc: 'A walled medieval city rising from Adriatic fjords, with Venetian palaces and cat-filled piazzas', bestTime: 'May – September', image: 'https://images.unsplash.com/photo-1555990793-da11153b2473?w=600&h=800&fit=crop&q=80' },
-  { name: 'Luang Prabang', country: 'Laos', continent: 'Asia', desc: 'Buddhist monks in saffron robes, dawn alms-giving rituals, and golden Mekong sunsets', bestTime: 'November – March', image: 'https://images.unsplash.com/photo-1574227492706-f65b24c3688a?w=600&h=800&fit=crop&q=80' },
-  { name: 'Matera', country: 'Italy', continent: 'Europe', desc: '2,000-year-old cave dwellings carved into the Basilicata hillside — a living fossil city', bestTime: 'April – October', image: 'https://images.unsplash.com/photo-1527631746610-bca00a040d60?w=600&h=800&fit=crop&q=80' },
-  { name: 'Chefchaouen', country: 'Morocco', continent: 'Africa', desc: 'The Blue City — every wall, staircase, and doorway painted in shades of cerulean and cobalt', bestTime: 'March – May', image: 'https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=600&h=800&fit=crop&q=80' },
-  { name: 'Faroe Islands', country: 'Denmark', continent: 'Europe', desc: 'Dramatic sea cliffs, puffin colonies, grass-roofed villages, and absolute solitude', bestTime: 'June – August', image: 'https://images.unsplash.com/photo-1531168556467-80aace0d0144?w=600&h=800&fit=crop&q=80' },
-  { name: 'Hampi', country: 'India', continent: 'Asia', desc: 'Ruined Vijayanagara Empire temples scattered among surreal giant boulder landscapes', bestTime: 'October – February', image: 'https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?w=600&h=800&fit=crop&q=80' },
+  { name: 'Kotor', country: 'Montenegro', continent: 'Europe', desc: 'A walled medieval city rising from Adriatic fjords, with Venetian palaces and cat-filled piazzas', bestTime: 'May – September', image: 'https://images.unsplash.com/photo-1555990793-da11153b2473?w=600&h=800&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/montenegro/kotor' },
+  { name: 'Luang Prabang', country: 'Laos', continent: 'Asia', desc: 'Buddhist monks in saffron robes, dawn alms-giving rituals, and golden Mekong sunsets', bestTime: 'November – March', image: 'https://images.unsplash.com/photo-1574227492706-f65b24c3688a?w=600&h=800&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/laos/northern-laos/luang-prabang' },
+  { name: 'Matera', country: 'Italy', continent: 'Europe', desc: '2,000-year-old cave dwellings carved into the Basilicata hillside — a living fossil city', bestTime: 'April – October', image: 'https://images.unsplash.com/photo-1527631746610-bca00a040d60?w=600&h=800&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/italy/basilicata/matera' },
+  { name: 'Chefchaouen', country: 'Morocco', continent: 'Africa', desc: 'The Blue City — every wall, staircase, and doorway painted in shades of cerulean and cobalt', bestTime: 'March – May', image: 'https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=600&h=800&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/morocco/the-mediterranean-coast-and-the-rif/chefchaouen' },
+  { name: 'Faroe Islands', country: 'Denmark', continent: 'Europe', desc: 'Dramatic sea cliffs, puffin colonies, grass-roofed villages, and absolute solitude', bestTime: 'June – August', image: 'https://images.unsplash.com/photo-1531168556467-80aace0d0144?w=600&h=800&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/denmark/the-faroe-islands' },
+  { name: 'Hampi', country: 'India', continent: 'Asia', desc: 'Ruined Vijayanagara Empire temples scattered among surreal giant boulder landscapes', bestTime: 'October – February', image: 'https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?w=600&h=800&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/india/karnataka/hampi' },
 ];
 
 const HiddenGems = () => {
@@ -393,11 +379,6 @@ const HiddenGems = () => {
 
 const GemCard = ({ data, index }) => {
   const ref = useScrollAnimation();
-  const handleExploreGem = () => {
-    window.dispatchEvent(new CustomEvent('openBookingModal', { 
-      detail: { title: data.name, context: `Hidden Gem · ${data.country}` } 
-    }));
-  };
   return (
     <div className="gem-card fade-in-section" ref={ref} style={{ animationDelay: `${index * 0.1}s` }}>
       <img src={data.image} alt={`${data.name}, ${data.country}`} className="gem-card-img" loading="lazy" />
@@ -408,7 +389,7 @@ const GemCard = ({ data, index }) => {
         <p className="gem-location">{data.country} · {data.continent}</p>
         <p className="gem-timing">Best time: {data.bestTime}</p>
         <p>{data.desc}</p>
-        <button className="gem-explore-btn" onClick={handleExploreGem}>Explore This Gem →</button>
+        <a href={data.guideUrl} target="_blank" rel="noopener noreferrer" className="gem-explore-btn">Read Gem Guide →</a>
       </div>
     </div>
   );
@@ -499,68 +480,6 @@ const HowItWorks = () => {
             <div className="step-circle"><span className="step-number">3</span></div>
             <h3>We Handle the Rest</h3>
             <p>From flights to farewell dinners — you just explore. We manage every detail behind the scenes</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-/* ─── SECTION 10: TESTIMONIALS ─── */
-const testimonialsData = [
-  { text: "We found Kotor through Wanderlux and it changed how we travel forever. The medieval walls, the fjord views — it felt like we discovered a secret world. We'll never go back to tourist traps.", name: 'Sophia & Marcus', location: 'Berlin, Germany 🇩🇪', rating: 5, initials: 'SM', color: '#4169E1' },
-  { text: "The Bali package was beyond expectations. From sunrise at Tegallalang Rice Terraces to street-side Babi Guling in Ubud — every moment was crafted to perfection. Truly a once-in-a-lifetime trip.", name: 'Priya Sharma', location: 'Mumbai, India 🇮🇳', rating: 5, initials: 'PS', color: '#E8614A' },
-  { text: "Eating Pad Thai at Thip Samai in Bangkok at midnight, thanks to Wanderlux's food tour, was the highlight of our honeymoon. They know exactly where the locals eat — no tourist traps, just pure magic.", name: 'James & Emily', location: 'Melbourne, Australia 🇦🇺', rating: 5, initials: 'JE', color: '#2D5A3D' },
-];
-
-const Testimonials = () => {
-  const [current, setCurrent] = useState(0);
-  const intervalRef = useRef(null);
-
-  const startAutoRotate = useCallback(() => {
-    intervalRef.current = setInterval(() => {
-      setCurrent(prev => (prev + 1) % testimonialsData.length);
-    }, 5000);
-  }, []);
-
-  useEffect(() => {
-    startAutoRotate();
-    return () => clearInterval(intervalRef.current);
-  }, [startAutoRotate]);
-
-  const goTo = (index) => {
-    clearInterval(intervalRef.current);
-    setCurrent(index);
-    startAutoRotate();
-  };
-
-  const ref = useScrollAnimation();
-  const t = testimonialsData[current];
-
-  return (
-    <section className="testimonials-section" id="testimonials">
-      <div className="container">
-        <div className="section-header fade-in-section" ref={ref}>
-          <span className="section-eyebrow">TRAVELER STORIES</span>
-          <h2 className="section-title">Stories From Fellow Wanderers</h2>
-        </div>
-        <div className="testimonials-carousel">
-          <div className="testimonial-card" key={current}>
-            <div className="testimonial-avatar" style={{ background: t.color }}>{t.initials}</div>
-            <div className="testimonial-stars">{'★'.repeat(t.rating)}</div>
-            <p className="testimonial-text">"{t.text}"</p>
-            <p className="testimonial-name">{t.name}</p>
-            <p className="testimonial-loc">{t.location}</p>
-          </div>
-          <div className="carousel-dots">
-            {testimonialsData.map((_, i) => (
-              <button
-                key={i}
-                className={`carousel-dot ${i === current ? 'active' : ''}`}
-                onClick={() => goTo(i)}
-                aria-label={`Go to testimonial ${i + 1}`}
-              />
-            ))}
           </div>
         </div>
       </div>
@@ -714,99 +633,6 @@ const useGlobalScrollObserver = () => {
   }, []);
 };
 
-/* ─── BOOKING MODAL ─── */
-const BookingModal = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [bookingData, setBookingData] = useState(null);
-  const [submitted, setSubmitted] = useState(false);
-
-  useEffect(() => {
-    const handleOpen = (e) => {
-      setBookingData(e.detail);
-      setIsOpen(true);
-      setSubmitted(false);
-      document.body.style.overflow = 'hidden';
-    };
-    window.addEventListener('openBookingModal', handleOpen);
-    return () => window.removeEventListener('openBookingModal', handleOpen);
-  }, []);
-
-  const close = () => {
-    setIsOpen(false);
-    document.body.style.overflow = 'auto';
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => {
-      close();
-    }, 2500);
-  };
-
-  if (!isOpen) return null;
-
-  return (
-    <div className={`modal-overlay ${isOpen ? 'show' : ''}`} onClick={close}>
-      <div className="modal-content" onClick={e => e.stopPropagation()}>
-        <button className="modal-close" onClick={close}>✕</button>
-        
-        {submitted ? (
-          <div className="modal-success">
-            <div className="success-icon">✓</div>
-            <h3>Request Sent!</h3>
-            <p>Our travel concierge will contact you within 24 hours regarding your trip to {bookingData?.title}.</p>
-          </div>
-        ) : (
-          <>
-            <div className="modal-header">
-              <span className="modal-eyebrow">Plan Your Next Escape</span>
-              <h2>{bookingData?.title}</h2>
-              {bookingData?.context && <p className="modal-context">{bookingData.context}</p>}
-            </div>
-            <form className="modal-form" onSubmit={handleSubmit}>
-              <div className="form-row">
-                <div className="form-group">
-                  <label>First Name</label>
-                  <input type="text" required placeholder="Jane" />
-                </div>
-                <div className="form-group">
-                  <label>Last Name</label>
-                  <input type="text" required placeholder="Doe" />
-                </div>
-              </div>
-              <div className="form-group">
-                <label>Email Address</label>
-                <input type="email" required placeholder="jane@example.com" />
-              </div>
-              <div className="form-row">
-                <div className="form-group">
-                  <label>Travel Dates</label>
-                  <input type="text" placeholder="e.g., Oct 12 - Oct 20" />
-                </div>
-                <div className="form-group">
-                  <label>Guests</label>
-                  <select>
-                    <option>1 Traveler</option>
-                    <option>2 Travelers</option>
-                    <option>3 - 4 Travelers</option>
-                    <option>5+ Travelers</option>
-                  </select>
-                </div>
-              </div>
-              <div className="form-group">
-                <label>Special Requests</label>
-                <textarea rows="3" placeholder="Tell us about your dream trip..."></textarea>
-              </div>
-              <button type="submit" className="btn-modal-submit">Request Itinerary →</button>
-            </form>
-          </>
-        )}
-      </div>
-    </div>
-  );
-};
-
 /* ─── APP ─── */
 const App = () => {
   useGlobalScrollObserver();
@@ -821,11 +647,9 @@ const App = () => {
       <HiddenGems />
       <Stats />
       <HowItWorks />
-      <Testimonials />
       <Blog />
       <Newsletter />
       <Footer />
-      <BookingModal />
     </>
   );
 };
