@@ -130,16 +130,16 @@ const Hero = () => {
 
 /* ─── SECTION 3: MUST-VISIT DESTINATIONS ─── */
 const destinationsData = [
-  { name: 'Santorini', country: 'Greece', flag: '🇬🇷', desc: 'Caldera views, blue-domed churches, and legendary Oia sunsets', price: 'From $1,299', image: 'https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=600&h=800&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/greece/cyclades/santorini' },
-  { name: 'Kyoto', country: 'Japan', flag: '🇯🇵', desc: 'Bamboo groves, geisha districts, and 1,600 ancient temples', price: 'From $1,499', image: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&h=800&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/japan/kansai/kyoto' },
-  { name: 'Bali', country: 'Indonesia', flag: '🇮🇩', desc: 'Emerald rice terraces, spiritual temples, and world-class surf', price: 'From $899', image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&h=800&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/indonesia/bali' },
-  { name: 'Maldives', country: 'Maldives', flag: '🇲🇻', desc: 'Overwater bungalows and bioluminescent beaches', price: 'From $1,899', image: 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=600&h=800&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/maldives' },
-  { name: 'Machu Picchu', country: 'Peru', flag: '🇵🇪', desc: 'Incan citadel perched high in the Andes mountains', price: 'From $1,199', image: 'https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=600&h=800&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/peru/the-cuzco-area/machu-picchu' },
-  { name: 'Amalfi Coast', country: 'Italy', flag: '🇮🇹', desc: 'Cliffside villages, limoncello, and azure coastal drives', price: 'From $1,599', image: 'https://images.unsplash.com/photo-1534113414509-0eec2bfb493f?w=600&h=800&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/italy/campania/the-amalfi-coast' },
-  { name: 'Patagonia', country: 'Chile & Argentina', flag: '🇨🇱', desc: 'Torres del Paine, glaciers, and world-class trekking', price: 'From $2,199', image: 'https://images.unsplash.com/photo-1531761535209-180857e963b9?w=600&h=800&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/chile/patagonia' },
-  { name: 'Marrakech', country: 'Morocco', flag: '🇲🇦', desc: 'Vibrant souks, ornate riads, and Jemaa el-Fna square', price: 'From $799', image: 'https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?w=600&h=800&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/morocco/marrakesh' },
-  { name: 'Queenstown', country: 'New Zealand', flag: '🇳🇿', desc: 'Adventure capital — fjords, bungee jumping, and alpine lakes', price: 'From $1,799', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=800&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/new-zealand/queenstown-and-wanaka' },
-  { name: 'Rajasthan', country: 'India', flag: '🇮🇳', desc: 'Grand forts, opulent palaces, desert safaris, and vivid colors', price: 'From ₹35,000', image: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=600&h=800&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/india/rajasthan' },
+  { name: 'Santorini', country: 'Greece', flag: '🇬🇷', desc: 'Caldera views, blue-domed churches, and legendary Oia sunsets', price: 'From $1,299', image: 'https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=600&h=800&fit=crop&q=80', guideUrl: 'https://en.wikipedia.org/wiki/Santorini' },
+  { name: 'Kyoto', country: 'Japan', flag: '🇯🇵', desc: 'Bamboo groves, geisha districts, and 1,600 ancient temples', price: 'From $1,499', image: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&h=800&fit=crop&q=80', guideUrl: 'https://en.wikipedia.org/wiki/Kyoto' },
+  { name: 'Bali', country: 'Indonesia', flag: '🇮🇩', desc: 'Emerald rice terraces, spiritual temples, and world-class surf', price: 'From $899', image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&h=800&fit=crop&q=80', guideUrl: 'https://en.wikipedia.org/wiki/Bali' },
+  { name: 'Maldives', country: 'Maldives', flag: '🇲🇻', desc: 'Overwater bungalows and bioluminescent beaches', price: 'From $1,899', image: 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=600&h=800&fit=crop&q=80', guideUrl: 'https://en.wikipedia.org/wiki/Maldives' },
+  { name: 'Machu Picchu', country: 'Peru', flag: '🇵🇪', desc: 'Incan citadel perched high in the Andes mountains', price: 'From $1,199', image: 'https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=600&h=800&fit=crop&q=80', guideUrl: 'https://en.wikipedia.org/wiki/Machu_Picchu' },
+  { name: 'Amalfi Coast', country: 'Italy', flag: '🇮🇹', desc: 'Cliffside villages, limoncello, and azure coastal drives', price: 'From $1,599', image: 'https://images.unsplash.com/photo-1534113414509-0eec2bfb493f?w=600&h=800&fit=crop&q=80', guideUrl: 'https://en.wikipedia.org/wiki/Amalfi_Coast' },
+  { name: 'Patagonia', country: 'Chile & Argentina', flag: '🇨🇱', desc: 'Torres del Paine, glaciers, and world-class trekking', price: 'From $2,199', image: 'https://images.unsplash.com/photo-1531761535209-180857e963b9?w=600&h=800&fit=crop&q=80', guideUrl: 'https://en.wikipedia.org/wiki/Patagonia' },
+  { name: 'Marrakech', country: 'Morocco', flag: '🇲🇦', desc: 'Vibrant souks, ornate riads, and Jemaa el-Fna square', price: 'From $799', image: 'https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?w=600&h=800&fit=crop&q=80', guideUrl: 'https://en.wikipedia.org/wiki/Marrakesh' },
+  { name: 'Queenstown', country: 'New Zealand', flag: '🇳🇿', desc: 'Adventure capital — fjords, bungee jumping, and alpine lakes', price: 'From $1,799', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=800&fit=crop&q=80', guideUrl: 'https://en.wikipedia.org/wiki/Queenstown,_New_Zealand' },
+  { name: 'Rajasthan', country: 'India', flag: '🇮🇳', desc: 'Grand forts, opulent palaces, desert safaris, and vivid colors', price: 'From ₹35,000', image: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=600&h=800&fit=crop&q=80', guideUrl: 'https://en.wikipedia.org/wiki/Rajasthan' },
 ];
 
 const Destinations = () => {
@@ -172,7 +172,7 @@ const DestinationCard = ({ data, index }) => {
         <p>{data.desc}</p>
         <span className="destination-price">{data.price}</span>
       </div>
-      <a href={data.guideUrl} target="_blank" rel="noopener noreferrer" className="destination-explore-btn">Read Guide →</a>
+      <a href={data.guideUrl} target="_blank" rel="noopener noreferrer" className="destination-explore-btn">More →</a>
     </div>
   );
 };
@@ -225,7 +225,7 @@ const StayCard = ({ data, index }) => {
         </div>
         <div className="stay-card-footer">
           <span className="stay-rating">{'★'.repeat(Math.floor(data.rating))} {data.rating}</span>
-          <a href={data.guideUrl} target="_blank" rel="noopener noreferrer" className="btn-check-avail">View Hostel →</a>
+          <a href={data.guideUrl} target="_blank" rel="noopener noreferrer" className="btn-check-avail">More →</a>
         </div>
       </div>
     </div>
@@ -234,12 +234,12 @@ const StayCard = ({ data, index }) => {
 
 /* ─── SECTION 5: BEST PACKAGES ─── */
 const packagesData = [
-  { name: 'Bali Bliss — 7 Days', category: 'Luxury', itinerary: 'Rice terrace trek → Ubud temples → Seminyak beach → Tanah Lot sunset', price: '$1,299', includes: ['✈ Flights', '🏨 5★ Resort', '🍽 All Meals', '🚌 Transfers'], badge: 'Most Popular', badgeClass: 'badge-popular', rating: 4.9, image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=700&h=400&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/indonesia/bali' },
-  { name: 'Swiss Alps — 10 Days', category: 'Adventure', itinerary: 'Zurich → Interlaken → Jungfrau → Zermatt → Lake Geneva → Lucerne', price: '$3,499', includes: ['✈ Flights', '🏨 4★ Chalet', '🍽 Breakfast', '🚌 Rail Pass'], badge: 'Best Value', badgeClass: 'badge-value', rating: 4.8, image: 'https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=700&h=400&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/switzerland/the-swiss-alps' },
-  { name: 'Golden Triangle India — 8 Days', category: 'Cultural', itinerary: 'Delhi → Agra (Taj Mahal) → Jaipur (Amber Fort) → Varanasi', price: '₹45,000', includes: ['🏨 Heritage Hotels', '🍽 All Meals', '🚌 AC Transport', '🎫 Guides'], badge: null, badgeClass: '', rating: 4.7, image: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=700&h=400&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/articles/golden-triangle-india' },
-  { name: 'Iceland Northern Lights — 6 Days', category: 'Adventure', itinerary: 'Reykjavik → Golden Circle → Blue Lagoon → Glacier Hike → Northern Lights hunt', price: '$2,899', includes: ['✈ Flights', '🏨 Boutique Hotel', '🍽 Breakfast', '🚌 4x4 Tours'], badge: null, badgeClass: '', rating: 4.9, image: 'https://images.unsplash.com/photo-1520769669658-f07657f5a307?w=700&h=400&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/iceland' },
-  { name: 'Santorini & Mykonos — 8 Days', category: 'Honeymoon', itinerary: 'Athens → Santorini (Oia sunset) → Mykonos (beach clubs) → Delos ruins', price: '$2,599', includes: ['✈ Flights', '🏨 Cave Hotel', '🍽 Half Board', '🚌 Ferry'], badge: 'Honeymoon Pick', badgeClass: 'badge-honeymoon', rating: 4.8, image: 'https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=700&h=400&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/greece/cyclades' },
-  { name: 'Vietnam Explorer — 12 Days', category: 'Budget', itinerary: 'Hanoi → Ha Long Bay → Hue → Hoi An → Ho Chi Minh City → Mekong Delta', price: '$899', includes: ['🏨 Boutique Hotels', '🍽 Breakfast', '🚌 Internal Flights', '🎫 Guides'], badge: 'Best Value', badgeClass: 'badge-value', rating: 4.7, image: 'https://images.unsplash.com/photo-1528127269322-539801943592?w=700&h=400&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/vietnam' },
+  { name: 'Bali Bliss — 7 Days', category: 'Luxury', itinerary: 'Rice terrace trek → Ubud temples → Seminyak beach → Tanah Lot sunset', price: '$1,299', includes: ['✈ Flights', '🏨 5★ Resort', '🍽 All Meals', '🚌 Transfers'], badge: 'Most Popular', badgeClass: 'badge-popular', rating: 4.9, image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=700&h=400&fit=crop&q=80', guideUrl: 'https://en.wikipedia.org/wiki/Bali' },
+  { name: 'Swiss Alps — 10 Days', category: 'Adventure', itinerary: 'Zurich → Interlaken → Jungfrau → Zermatt → Lake Geneva → Lucerne', price: '$3,499', includes: ['✈ Flights', '🏨 4★ Chalet', '🍽 Breakfast', '🚌 Rail Pass'], badge: 'Best Value', badgeClass: 'badge-value', rating: 4.8, image: 'https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=700&h=400&fit=crop&q=80', guideUrl: 'https://en.wikipedia.org/wiki/Swiss_Alps' },
+  { name: 'Golden Triangle India — 8 Days', category: 'Cultural', itinerary: 'Delhi → Agra (Taj Mahal) → Jaipur (Amber Fort) → Varanasi', price: '₹45,000', includes: ['🏨 Heritage Hotels', '🍽 All Meals', '🚌 AC Transport', '🎫 Guides'], badge: null, badgeClass: '', rating: 4.7, image: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=700&h=400&fit=crop&q=80', guideUrl: 'https://en.wikipedia.org/wiki/Golden_Triangle_(India)' },
+  { name: 'Iceland Northern Lights — 6 Days', category: 'Adventure', itinerary: 'Reykjavik → Golden Circle → Blue Lagoon → Glacier Hike → Northern Lights hunt', price: '$2,899', includes: ['✈ Flights', '🏨 Boutique Hotel', '🍽 Breakfast', '🚌 4x4 Tours'], badge: null, badgeClass: '', rating: 4.9, image: 'https://images.unsplash.com/photo-1520769669658-f07657f5a307?w=700&h=400&fit=crop&q=80', guideUrl: 'https://en.wikipedia.org/wiki/Iceland' },
+  { name: 'Santorini & Mykonos — 8 Days', category: 'Honeymoon', itinerary: 'Athens → Santorini (Oia sunset) → Mykonos (beach clubs) → Delos ruins', price: '$2,599', includes: ['✈ Flights', '🏨 Cave Hotel', '🍽 Half Board', '🚌 Ferry'], badge: 'Honeymoon Pick', badgeClass: 'badge-honeymoon', rating: 4.8, image: 'https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=700&h=400&fit=crop&q=80', guideUrl: 'https://en.wikipedia.org/wiki/Cyclades' },
+  { name: 'Vietnam Explorer — 12 Days', category: 'Budget', itinerary: 'Hanoi → Ha Long Bay → Hue → Hoi An → Ho Chi Minh City → Mekong Delta', price: '$899', includes: ['🏨 Boutique Hotels', '🍽 Breakfast', '🚌 Internal Flights', '🎫 Guides'], badge: 'Best Value', badgeClass: 'badge-value', rating: 4.7, image: 'https://images.unsplash.com/photo-1528127269322-539801943592?w=700&h=400&fit=crop&q=80', guideUrl: 'https://en.wikipedia.org/wiki/Vietnam' },
 ];
 
 const Packages = () => {
@@ -291,7 +291,7 @@ const PackageCard = ({ data, index }) => {
         </div>
         <div className="package-card-footer">
           <span className="package-rating">{'★'.repeat(Math.floor(data.rating))} {data.rating}</span>
-          <a href={data.guideUrl} target="_blank" rel="noopener noreferrer" className="btn-view-package" style={{ textDecoration: 'none', textAlign: 'center' }}>View Package Guide</a>
+          <a href={data.guideUrl} target="_blank" rel="noopener noreferrer" className="btn-view-package" style={{ textDecoration: 'none', textAlign: 'center' }}>More →</a>
         </div>
       </div>
     </div>
@@ -342,7 +342,7 @@ const CulinaryCard = ({ data, index }) => {
           <span className={`culinary-tag ${data.tagClass}`}>{data.category}</span>
           {data.foodTour && <span className="tag-food-tour">🍴 Food Tour Available</span>}
         </div>
-        <a href={data.guideUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', marginTop: '16px', color: 'var(--midnight)', fontWeight: 600, textDecoration: 'underline' }}>Read Food Guide →</a>
+        <a href={data.guideUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', marginTop: '16px', color: 'var(--midnight)', fontWeight: 600, textDecoration: 'underline' }}>More →</a>
       </div>
     </div>
   );
@@ -351,11 +351,11 @@ const CulinaryCard = ({ data, index }) => {
 /* ─── SECTION 7: HIDDEN GEMS ─── */
 const gemsData = [
   { name: 'Kotor', country: 'Montenegro', continent: 'Europe', desc: 'A walled medieval city rising from Adriatic fjords, with Venetian palaces and cat-filled piazzas', bestTime: 'May – September', image: 'https://images.unsplash.com/photo-1555990793-da11153b2473?w=600&h=800&fit=crop&q=80', guideUrl: 'https://www.tripadvisor.com/Tourism-g295381-Kotor_Kotor_Municipality-Vacations.html' },
-  { name: 'Luang Prabang', country: 'Laos', continent: 'Asia', desc: 'Buddhist monks in saffron robes, dawn alms-giving rituals, and golden Mekong sunsets', bestTime: 'November – March', image: 'https://images.unsplash.com/photo-1574227492706-f65b24c3688a?w=600&h=800&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/laos/northern-laos/luang-prabang' },
-  { name: 'Matera', country: 'Italy', continent: 'Europe', desc: '2,000-year-old cave dwellings carved into the Basilicata hillside — a living fossil city', bestTime: 'April – October', image: 'https://images.unsplash.com/photo-1527631746610-bca00a040d60?w=600&h=800&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/italy/basilicata/matera' },
-  { name: 'Chefchaouen', country: 'Morocco', continent: 'Africa', desc: 'The Blue City — every wall, staircase, and doorway painted in shades of cerulean and cobalt', bestTime: 'March – May', image: 'https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=600&h=800&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/morocco/the-mediterranean-coast-and-the-rif/chefchaouen' },
+  { name: 'Luang Prabang', country: 'Laos', continent: 'Asia', desc: 'Buddhist monks in saffron robes, dawn alms-giving rituals, and golden Mekong sunsets', bestTime: 'November – March', image: 'https://images.unsplash.com/photo-1574227492706-f65b24c3688a?w=600&h=800&fit=crop&q=80', guideUrl: 'https://en.wikipedia.org/wiki/Luang_Prabang' },
+  { name: 'Matera', country: 'Italy', continent: 'Europe', desc: '2,000-year-old cave dwellings carved into the Basilicata hillside — a living fossil city', bestTime: 'April – October', image: 'https://images.unsplash.com/photo-1527631746610-bca00a040d60?w=600&h=800&fit=crop&q=80', guideUrl: 'https://en.wikipedia.org/wiki/Matera' },
+  { name: 'Chefchaouen', country: 'Morocco', continent: 'Africa', desc: 'The Blue City — every wall, staircase, and doorway painted in shades of cerulean and cobalt', bestTime: 'March – May', image: 'https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=600&h=800&fit=crop&q=80', guideUrl: 'https://en.wikipedia.org/wiki/Chefchaouen' },
   { name: 'Faroe Islands', country: 'Denmark', continent: 'Europe', desc: 'Dramatic sea cliffs, puffin colonies, grass-roofed villages, and absolute solitude', bestTime: 'June – August', image: 'https://images.unsplash.com/photo-1531168556467-80aace0d0144?w=600&h=800&fit=crop&q=80', guideUrl: 'https://visitfaroeislands.com/' },
-  { name: 'Hampi', country: 'India', continent: 'Asia', desc: 'Ruined Vijayanagara Empire temples scattered among surreal giant boulder landscapes', bestTime: 'October – February', image: 'https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?w=600&h=800&fit=crop&q=80', guideUrl: 'https://www.lonelyplanet.com/india/karnataka/hampi' },
+  { name: 'Hampi', country: 'India', continent: 'Asia', desc: 'Ruined Vijayanagara Empire temples scattered among surreal giant boulder landscapes', bestTime: 'October – February', image: 'https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?w=600&h=800&fit=crop&q=80', guideUrl: 'https://en.wikipedia.org/wiki/Hampi' },
 ];
 
 const HiddenGems = () => {
@@ -389,7 +389,7 @@ const GemCard = ({ data, index }) => {
         <p className="gem-location">{data.country} · {data.continent}</p>
         <p className="gem-timing">Best time: {data.bestTime}</p>
         <p>{data.desc}</p>
-        <a href={data.guideUrl} target="_blank" rel="noopener noreferrer" className="gem-explore-btn">Read Gem Guide →</a>
+        <a href={data.guideUrl} target="_blank" rel="noopener noreferrer" className="gem-explore-btn">More →</a>
       </div>
     </div>
   );
